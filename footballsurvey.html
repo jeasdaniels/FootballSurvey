@@ -1,0 +1,118 @@
+<!DOCTYPE>
+<html lang="en">
+  <head>
+    <title>My Survey Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      <main>
+        <h1 id="title">Football survey</h1>
+        <p id="description">This is a survey to find out what people prefer about the world of football</p>
+        <hr>
+      </main>
+      <form id="survey-form">
+       <fieldset>
+        <div>
+         <label id="name-label" for="name" class="">Enter your name: </label>
+           <input id="name" type="text" required placeholder="John Doe"><br>
+        </div>
+        <div>
+         <label id="email-label" for="email" class="">Enter your email address: </label>
+          <input id="email" type="email" required placeholder="johndoe@gmail.com"><br>
+        </div>
+        <div>
+        <label id="number-label" for="number" class="">Enter your age: </label>
+        <input id="number" type="number" min="12" max="120" required placeholder="Ex: 18">
+        </div>
+        </fieldset>
+        <p>What football team do you prefer? (Choose one of the following options)</p>
+        <fieldset>
+          <label for="team" class="teams">FC Barcelona</label>
+          <input type="radio" name="team" id="fcbarcelona" value="barcelona"><br>
+          <label for="team" class="teams">Real Madrid CF</label>
+          <input type="radio" name="team" id="realmadrid" value="real"><br>
+          <label for="team" class="teams"> FC Bayern Munchen</label>
+          <input type="radio" name="team" id="fcbayern" value="bayern"><br>
+          <label for="team" class="teams">Liverpool FC</label>
+          <input type="radio" name="team" id="liverpool" value="liverpool"><br>
+          <label for="team" class="teams">AC Milan</label>
+          <input type="radio" name="team" id="acmilan" value="milan"><br>
+        </fieldset>
+        <fieldset>
+     <p>
+   What national team do you like best? (Choose one of the following options)
+     </p>
+     <label for="national-team" class="teams">Brazil</label>
+          <input type="radio" name="national-team" id="brazil" value="brazil"><br>
+          <label for="national-team" class="teams">Argentina</label>
+          <input type="radio" name="national-team" id="argentina" value="argentina"><br>
+          <label for="national-team" class="teams"> Germany</label>
+          <input type="radio" name="national-team" id="fcbayern" value="bayern"><br>
+          <label for="national-team" class="teams">Italy</label>
+          <input type="radio" name="national-team" id="italy" value="italy"><br>
+          <label for="national-team" class="teams">France</label>
+          <input type="radio" name="national-team" id="france" value="france"><br>
+          <label for="national-team" class="teams">Uruguay
+            </label>
+            <input type="radio" name="national-team" id="uruguay" value="uruguay"><br>
+        </fieldset>
+        <fieldset>
+          <p class="bottom-space">Select your favorite competition from the dropdown menu</p>
+         <div class="select"> 
+           <select id="dropdown" name="competition" class="dropdown-menu">
+             <option value="none"  selected disabled>None</option>
+          <option value="worldcup">World Cup</option>
+          <option value="eurocup">Euro Cup</option>
+          <option value="copaamerica">Copa America</option>
+          <option value="champions">Champions League</option>
+          <option value="libertadores">Copa Libertadores</option>
+          <option value="clubworldcup">Club World Cup</option>
+          <option value="other">Other</option>
+          </select>
+           </div> 
+           <fieldset> 
+          <p>Select your favorite coaches from the following list      </p>
+          <div class="coaches">
+            <label>Pep Guardiola
+              </label>
+              <input type="checkbox">
+              </input>
+              <label>Jürgen Klopp
+              </label>
+              <input type="checkbox">
+              </input>
+              <label>Carlo Ancelotti
+              </label>
+              <input type="checkbox">
+              </input>
+              <label>Jose Mourinho
+              </label>
+              <input type="checkbox">
+              </input>
+              <label>Luis Enrique
+              </label>
+              <input type="checkbox">
+              </input>
+              <label>Diego Simeone
+              </label>
+              <input type="checkbox">
+              </input>
+          </div>
+          </fieldset>
+          <fieldset>
+            <p>Shortly describe the best experience you've had related to the world of football: </p>
+            <div class="experience">
+            <textarea value="experience" id="footexp" rows="4" cols="67" placeholder="Start typing here..."></textarea>
+            </div>
+            </fieldset>
+            <hr>
+            <fieldset>
+              <div class="submit">
+            <button type="submit" id="submit">Submit answers</button>
+            </div>
+            </fieldset>
+      </form>
+      </body>
